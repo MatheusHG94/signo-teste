@@ -26,31 +26,60 @@
             </div>
             <div class="form__item">
                 <label class="form__label" for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" required>
+                <input type="text" name="nome" id="nome" required maxlength="255">
             </div>
             <div class="form__item">
                 <label class="form__label" for="endereco">Endereço:</label>
-                <input type="text" name="endereco" id="endereco">
+                <input type="text" name="endereco" id="endereco" maxlength="255">
             </div>
             <div class="form__item">
                 <label class="form__label" for="bairro">Bairro:</label>
-                <input type="text" name="bairro" id="bairro">
+                <input type="text" name="bairro" id="bairro" maxlength="255">
             </div>
             <div class="form__item">
                 <label class="form__label" for="cep">CEP:</label>
-                <input type="text" name="cep" id="cep">
+                <input type="text" name="cep" id="cep" minlength="8" maxlength="10">
             </div>
             <div class="form__item">
                 <label class="form__label" for="cidade">Cidade:</label>
-                <input type="text" name="cidade" id="cidade">
+                <input type="text" name="cidade" id="cidade" maxlength="255">
             </div>
             <div class="form__item">
                 <label class="form__label" for="uf">UF:</label>
-                <input type="text" name="uf" id="uf">
+                <input type="text" list="estados" name="uf" id="uf">
+                <datalist id="estados">
+                    <option value="Acre"></option>
+                    <option value="Alagoas"></option>
+                    <option value="Amapá"></option>
+                    <option value="Amazonas"></option>
+                    <option value="Bahia"></option>
+                    <option value="Ceará"></option>
+                    <option value="Espírito Santo"></option>
+                    <option value="Goiás"></option>
+                    <option value="Maranhão"></option>
+                    <option value="Mato Grosso"></option>
+                    <option value="Mato Grosso do Sul"></option>
+                    <option value="Minas Gerais"></option>
+                    <option value="Pará"></option>
+                    <option value="Paraíba"></option>
+                    <option value="Paraná"></option>
+                    <option value="Pernambuco"></option>
+                    <option value="Piauí"></option>
+                    <option value="Rio de Janeiro"></option>
+                    <option value="Rio Grande do Norte"></option>
+                    <option value="Rio Grande do Sul"></option>
+                    <option value="Rondônia"></option>
+                    <option value="Roraima"></option>
+                    <option value="Santa Catarina"></option>
+                    <option value="São Paulo"></option>
+                    <option value="Sergipe"></option>
+                    <option value="Tocantins"></option>
+                    <option value="Distrito Federal"></option>
+                </datalist>
             </div>
             <div class="form__item">
                 <label class="form__label" for="email">E-mail:</label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" required maxlength="255">
             </div>
             <div class="form__item">
                 <label class="form__label" for="telefone">Telefone:</label>
@@ -62,21 +91,21 @@
             <div class="form__item">
                 <span class="form__label">Tipo revistinha:</span>
                 <fieldset>
-                    <input type="radio" name="tipo" id="convite" value="convite">
+                    <input type="radio" name="tipo" id="convite" value="convite" required>
                     <label for="convite">Convite</label>
-                    <input type="radio" name="tipo" id="lembranca" value="lembranca">
+                    <input type="radio" name="tipo" id="lembranca" value="lembranca" required>
                     <label for="lembranca">Lembrança</label>
-                    <input type="radio" name="tipo" id="convite-lembranca" value="convite-lembranca">
+                    <input type="radio" name="tipo" id="convite-lembranca" value="convite-lembranca" required>
                     <label for="convite-lembranca">Convite-lembrança</label>
                 </fieldset>
             </div>
             <div class="form__item">
                 <label class="form__label" for="quantidade">Quantidade:</label>
-                <input type="number" name="quantidade" id="quantidade">
+                <input type="number" name="quantidade" id="quantidade" required min="1">
             </div>
             <div class="form__item">
                 <label class="form__label" for="atracoes">Atrações do evento:</label>
-                <input type="text" name="atracoes" id="atracoes">
+                <input type="text" name="atracoes" id="atracoes" required>
             </div>
             <div class="form__item">
                 <div class="form__checkbox">
