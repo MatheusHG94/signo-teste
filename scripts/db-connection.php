@@ -34,6 +34,8 @@
     $sugestoes = $_POST["sugestoes"];
     $imagens = $_POST["imagens"];
 
+    $cep = str_replace(".", "", $cep);
+    $cep = str_replace("-", "", $cep);
     $sugestoes = $sugestoes === 'on' ? 1 : 0;
 
     // SQL insert query

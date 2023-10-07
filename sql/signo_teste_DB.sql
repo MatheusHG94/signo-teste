@@ -14,6 +14,6 @@ CREATE TABLE IF NOT EXISTS pedidos (
     quantidade INT NOT NULL,
     atracoes_do_evento VARCHAR(510) NOT NULL,
     aceita_sugestoes TINYINT,
-    imagens VARCHAR(255) NOT NULL,
+    imagens VARCHAR(255),
     PRIMARY KEY (id)
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8;
